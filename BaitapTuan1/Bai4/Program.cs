@@ -10,9 +10,9 @@ namespace Bai4
     {
         static void Main(string[] args)
         {
-            Cat khoaiLangTheCat = new Cat();
+            Cat khoaiLangTheCat = new Cat("Khoai Lang");
             khoaiLangTheCat.Sound();
-            Dog jonTheDog = new Dog();
+            Dog jonTheDog = new Dog("Jon");
             jonTheDog.Sound();
             Console.ReadLine();
         }
@@ -20,17 +20,29 @@ namespace Bai4
 
     class Cat : Animal
     {
+        string name;
+
+        public Cat(string name)
+        {
+            this.name = name;
+        }
         public override void Sound()
         {
-            Console.WriteLine("Meow meow!");
+            Console.WriteLine($"The cat {this.name} says \"Meow meow!\".");
         }
     }
 
     class Dog : Animal
     {
+        string name;
+
+        public Dog(string name)
+        {
+            this.name = name;
+        }
         public override void Sound()
         {
-            Console.WriteLine("Go go!");
+            Console.WriteLine($"The dog {this.name} says \"Go go!\".");
         }
 
     }
