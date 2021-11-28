@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai5", "Bai5\Bai5.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai2_HashTable", "Bai2_HashTable\Bai2_HashTable.csproj", "{314D197F-0FD0-4474-963D-5A00BB4016A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai3_ReadFile", "Bai3_ReadFile\Bai3_ReadFile.csproj", "{FD85A721-9BD5-414F-8B34-F205B7CB914A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{314D197F-0FD0-4474-963D-5A00BB4016A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{314D197F-0FD0-4474-963D-5A00BB4016A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{314D197F-0FD0-4474-963D-5A00BB4016A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD85A721-9BD5-414F-8B34-F205B7CB914A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD85A721-9BD5-414F-8B34-F205B7CB914A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD85A721-9BD5-414F-8B34-F205B7CB914A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD85A721-9BD5-414F-8B34-F205B7CB914A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
