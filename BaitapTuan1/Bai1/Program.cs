@@ -20,7 +20,8 @@ namespace Bai1
             Console.WriteLine("Cac so nguyen to co trong mang:");
             for (int j=0;j<1000;++j)
             {
-                if (KtraNto(intArray[j]))//Khong nen goi ham trong cau lenh dieu kien, gan ket qua cho bien va kiem tra gia tri bien
+                bool isPrime = KiemtraNguyento(intArray[j]);
+                if (isPrime)//Khong nen goi ham trong cau lenh dieu kien, gan ket qua cho bien va kiem tra gia tri bien
                 {
                     Console.WriteLine(intArray[j]);
                 }
@@ -29,14 +30,14 @@ namespace Bai1
         }
 
         //Ham kiem tra so nguyen to
-        static bool KtraNto(int n)//Khong nen viet tat ten ham. Vi du: kiemtraNguyento(int n)
+        static bool KiemtraNguyento(int n) //Khong nen viet tat ten ham. Vi du: kiemtraNguyento(int n)
         {
             bool result = true;
             if (n <= 1)
             {
                 result = false;
             }
-            for (int i = 2; i <= Math.Sqrt(n); ++i)//Tai lai lai la Sqrt nhi?
+            for (int i = 2; i <= Math.Sqrt(n); ++i) //Tai lai lai la Sqrt nhi? - Tai uoc so cua n phan bo deu tren 2 mien [2,sprt(n)] và [sqrt(n),n-1] nen chi can kiem tra tren mien dau tien thi toi uu hon a.
             {
                 if (n % i == 0)
                 {
